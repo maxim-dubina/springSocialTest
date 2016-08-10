@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Facebook Profile</title>
+</head>
+<body>
+
+<div th:each="profile:${profile}">
+    <p>Name: <b th:text="${profile.name}"> </b> </p>
+    <p>Age:  <b th:text="${profile.ageRange}"></b> </p>
+    <p>Email: <b th:text="${profile.email}"></b> </p>
+    <hr/>
+</div>
+</body>
+</html>

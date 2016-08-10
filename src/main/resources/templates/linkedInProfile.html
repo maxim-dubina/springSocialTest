@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Linked In</title>
+</head>
+<body>
+<div th:each="profile:${profile}">
+    <p>Picture: <img th:if="${profile.profilePictureUrl}" th:src="${profile.profilePictureUrl}"/> </p>
+    <p>FirstName: <b th:text="${profile.firstName}"> </b> </p>
+    <p>LastName: <b th:text="${profile.lastName}"></b> </p>
+    <p>Link: <b th:text="${profile.publicProfileUrl}"></b></p>
+
+    <hr/>
+</div>
+</body>
+</html>
